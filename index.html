@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+    <script>
+        function principal() {
+            var escolha = document.getElementById('operacao').value;
+            alert(escolha); 
+        }
+        function soma() {
+
+        }  
+        function subtracao() {
+
+        }
+        function divisao() {
+
+        }
+        function multiplicao() {
+
+        }
+    </script>
+</head>
+<body>
+    <span>Crie 2 campos de texto (com labels) "Valor A” e "Valor B”</span><br>
+    <label for="valorA">Valor A:</label>
+    <input type="text" id="valorA" name="valorA"><br><br>
+
+    <label for="valorB">Valor B:</label>
+    <input type="text" id="valorB" name="valorB"><br><br>
+
+    <span>Crie um combobox opção (com label opção) com os valores "Soma, Subtração, Divisão e Multiplicação”</span><br>
+    <label for="operacao">Opcao:</label>
+    <select id="operacao" name="operacao">
+        <option value="Soma" onclick="soma()">Soma</option>
+        <option value="Subtração" onclick="subtracao()">Subtração</option>
+        <option value="Divisão" onclick="divisao()">Divisão</option>
+        <option value="Multiplicação" onclick="multiplicao()">Multiplicação</option>
+    </select><br><br>
+
+    <span>Crie (apenas) um botão "Calcular”</span><br>
+    <input id="calcular" type="submit" value="Calcular" onclick="principal()">
+
+</body>
+</html>
